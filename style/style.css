@@ -86,7 +86,7 @@ h3 {
 }
 
 /* KOLUMNY, KONTENER, SEKCJE */
-.col-one-third {
+/*.col-one-third {
 	width:33.3333%;
 	float: left;
 }
@@ -95,10 +95,30 @@ h3 {
 	width:50%;
 	float: left;
 }
+*/
+
+.col-one-third, .col-half{
+width: 100%;
+float: none;
+}
+
+@media screen and (min-width: 960px){
+	.col-one-third {
+	width:33.3333%;
+	float: left;
+	}
+
+	.col-half{
+	width:50%;
+	float: left;
+	}
+}
+
 
 section {
 	clear: both;
 	padding: 90px 0;
+	overflow: auto; /* gdy kontenery obejmuja elemnenty plywajace stosujemy  to  */
 }
 
 .container{
@@ -161,10 +181,70 @@ section {
 	line-height: 60px;
 }
 
-/* TEMPORARY STYLE FOR BANNER */
+/* BANNER */
 
 .banner{
+	color: #FFFFFF;
 	background: #000000;
+	padding: 200px 0;
+	background: url("../img/top.jpg") 0 -140px;
 
 
+}
+
+.banner h1{
+	margin-bottom: 30px;
+}
+
+/* sekcja intro */
+
+.intro img{
+	margin-bottom: 32px;
+	width: 180px;
+	height: 180px;
+}
+
+.intro h3{
+
+	margin-bottom: 10px;
+	color: #A1D76F;
+}
+
+.promo {
+	background: #D15555;
+}
+
+.promo h2{
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.promo p{
+	color: #EEEEEE;
+}
+
+/* SEKCJA CONTACT */
+
+.contact input {
+  margin-bottom: 16px;
+  border-radius: 2px;
+  border:1px solid #DDDDDD; 
+  width: 80%;
+  padding:8px;
+
+}
+
+
+.contact .col-half{
+
+	margin-top: 16px;
+}
+
+
+/* STOPKA */
+
+.site-footer{
+	background:#000000;
+	color:#FFFFFF;
+	padding:16px 0;
 }
